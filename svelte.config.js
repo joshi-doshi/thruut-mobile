@@ -8,8 +8,8 @@ const config = {
 			fallback: 'index.html' // important for SPA routing in Capacitor
 		}),
 		paths: {
-			base: '',
-			assets: ''
+			base: '/preview',
+			assets: 'https://thruut.ch/preview'
 		},
 		prerender: {
 			entries: ['*']

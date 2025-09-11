@@ -4,8 +4,8 @@
 	import Finished from './Finished.svelte';
 </script>
 
-<div class="overflow-hidden">
-	<Welcome />
-	<Username />
-	<Finished />
+<div class="h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll">
+	<Welcome class="flex h-screen snap-center items-center justify-center" />
+	<Username class="flex h-screen snap-center items-center justify-center" />
+	<Finished class="flex h-screen snap-center items-center justify-center" />
 </div>
