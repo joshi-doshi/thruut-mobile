@@ -12,6 +12,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face{font-display:swap;font-family:Ten Ten Rounded;font-style:normal;font-weight:500;src:url(https://tenten.app/static/media/TenTenRounded-Medium.2acf4ddb3aaf40eee1fc.eot);src:url(https://tenten.app/static/media/TenTenRounded-Medium.2acf4ddb3aaf40eee1fc.eot?#iefix) format("embedded-opentype"),url(https://tenten.app/static/media/TenTenRounded-Medium.995244603217edc08165.woff2) format("woff2"),url(https://tenten.app/static/media/TenTenRounded-Medium.0bacdfae4a7fedbfb545.woff) format("woff"),url(/https://tenten.appstatic/media/TenTenRounded-Medium.55d1ef9577626381bb96.ttf) format("truetype"),url(https://tenten.app/static/media/TenTenRounded-Medium.cb57694184c19c4d056c.svg#TenTenRounded-Medium) format("svg")}
+
+* {
+  font-family: "Ten Ten Rounded";
+}
+
 :root {
   --radius: 0.675rem;
   --background: #111111;
