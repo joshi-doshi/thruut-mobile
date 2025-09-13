@@ -1,15 +1,33 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script lang="ts">
 	import Welcome from './Welcome.svelte';
 	import Username from './Username.svelte';
 	import Finished from './Finished.svelte';
+
+	let container;
+
+	let currentScrollWidth = 0;
+
+	function nextPage() {
+		const children = container.children;
+		currentScrollWidth -= 100;
+		for (let child of children) {
+			child.style.transform = `translateX(${currentScrollWidth}vw)`;
+			child.style.transition = 'transform 0.5s ease';
+		}
+	}
 </script>
 
-<div class="h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll">
-	<Welcome class="flex h-screen snap-center items-center justify-center" />
-	<Username class="flex h-screen snap-center items-center justify-center" />
-	<Finished class="flex h-screen snap-center items-center justify-center" />
+<div
+	class="scrollbar-hide flex h-screen w-screen snap-x snap-mandatory overflow-hidden"
+	bind:this={container}
+>
+	<div class="h-screen w-screen flex-1 snap-center">
+		<Welcome {nextPage} />
+	</div>
+	<div class="h-screen w-screen flex-1 snap-center">
+		<Username {nextPage} />
+	</div>
+	<div class="h-screen w-screen flex-1 snap-center">
+		<Finished />
+	</div>
 </div>

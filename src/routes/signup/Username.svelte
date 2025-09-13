@@ -2,6 +2,8 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { ArrowRight } from '@lucide/svelte';
+
+	let { nextPage } = $props();
 </script>
 
 <div class="relative flex h-screen w-screen snap-center flex-col items-center justify-center gap-5">
@@ -14,7 +16,7 @@
 
 	<div class="flex flex-col items-center gap-3">
 		<Input placeholder="enter your username here" />
-		<Button variant="secondary" class="text-md"><ArrowRight />confirm</Button>
+		<Button variant="secondary" class="text-md" onclick={nextPage}><ArrowRight />confirm</Button>
 	</div>
 
 	<div class="absolute bottom-6 text-center text-sm">it will be used so you can add friends</div>

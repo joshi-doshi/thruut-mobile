@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 @import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
 
 @import "tw-animate-css";
 
