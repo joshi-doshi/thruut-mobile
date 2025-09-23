@@ -4,8 +4,6 @@
 </script>
 
 <header class="flex items-center justify-between p-6">
-	<Button variant="link">
-		<Settings /></Button
-	>
-	<Button variant="link"><Plus /></Button>
+	<Settings />
+	<Plus />
 </header>
