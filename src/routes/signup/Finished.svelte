@@ -1,5 +1,6 @@
 <script>
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { Spinner } from "$lib/components/ui/spinner/index.js";
 
 	let loading = $state(false);
 	let launchAppButton;
@@ -17,43 +18,9 @@
 		<div class="text-3xl">you're all set!</div>
 	</div>
 
-	<Button variant="secondary" class="text-md" onclick={switchToApp}
+	<Button variant="default" class="text-md" onclick={switchToApp}
 		><span bind:this={launchAppButton}
-			>{#if !loading}start using the app{:else}<div id="loader"></div>{/if}</span
+			>{#if !loading}start using the app{:else}<Spinner />{/if}</span
 		></Button
 	>
 </div>
-
-<style>
-	/* From Uiverse.io by Fernando-sv */
-	#loader {
-		border: 2px solid rgba(0, 0, 0, 0.1);
-		border-left-color: transparent;
-		border-radius: 50%;
-	}
-
-	#loader {
-		border: 2px solid rgba(0, 0, 0, 0.1);
-		border-left-color: transparent;
-		width: 24px;
-		height: 24px;
-	}
-
-	#loader {
-		border: 2px solid rgba(0, 0, 0, 0.1);
-		border-left-color: transparent;
-		width: 24px;
-		height: 24px;
-		animation: spin89345 1s linear infinite;
-	}
-
-	@keyframes spin89345 {
-		0% {
-			transform: rotate(0deg);
-		}
-
-		100% {
-			transform: rotate(360deg);
-		}
-	}
-</style>

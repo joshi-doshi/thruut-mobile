@@ -10,7 +10,7 @@
 	/**/
 
 	function submitUsernameRequest() {
-		
+		nextPage();
 	}
 </script>
 
@@ -24,7 +24,7 @@
 
 	<div class="flex flex-col items-center gap-3">
 		<Input placeholder="enter your username here" />
-		<Button variant="secondary" class="text-md" onclick={submitUsernameRequest}
+		<Button variant="default" class="text-md" onclick={submitUsernameRequest}
 			><ArrowRight />confirm</Button
 		>
 	</div>

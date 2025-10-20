@@ -4,6 +4,10 @@
 </script>
 
 <header class="flex items-center justify-between p-6">
-	<Settings />
-	<Plus />
+	<Button variant="ghost" size="icon" class="size-8">
+		<Settings />
+	</Button>
+	<Button variant="ghost" size="icon" class="size-8">
+		<Plus />
+	</Button>
 </header>

@@ -15,7 +15,7 @@
 		<div class="text-xl">let's get you started.</div>
 	</div>
 
-	<Button variant="secondary" class="text-md" onclick={nextPage}
+	<Button variant="default" class="text-md" onclick={nextPage}
 		><ArrowRight />create an account</Button
 	>
 
