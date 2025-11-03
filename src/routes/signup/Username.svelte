@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { ArrowRight } from '@lucide/svelte';
@@ -9,7 +9,13 @@
 
 	/**/
 
+	let username = $state('');
+
 	function submitUsernameRequest() {
+		const data = {
+			username: username
+		};
+
 		nextPage();
 	}
 </script>
@@ -23,7 +29,7 @@
 	</div>
 
 	<div class="flex flex-col items-center gap-3">
-		<Input placeholder="enter your username here" />
+		<Input placeholder="enter your username here" id="username" bind:value={username} />
 		<Button variant="default" class="text-md" onclick={submitUsernameRequest}
 			><ArrowRight />confirm</Button
 		>
