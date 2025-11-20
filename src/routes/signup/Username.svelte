@@ -3,12 +3,22 @@
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { ArrowRight } from '@lucide/svelte';
 	import { fetchData, postData } from '$lib/api';
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/develop
 
 	let { nextPage } = $props();
 
 	/**/
 
+<<<<<<< HEAD
 	function submitUsernameRequest() {}
+=======
+	function submitUsernameRequest() {
+		
+	}
+>>>>>>> origin/develop
 </script>
 
 <div class="relative flex h-screen w-screen snap-center flex-col items-center justify-center gap-5">
