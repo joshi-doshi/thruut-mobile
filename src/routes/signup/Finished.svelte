@@ -17,7 +17,7 @@
 		<div class="text-3xl">you're all set!</div>
 	</div>
 
-	<Button variant="secondary" class="text-md" onclick={switchToApp}
+	<Button variant="secondary" class="text-md min-w-70" onclick={switchToApp}
 		><span bind:this={launchAppButton}
 			>{#if !loading}start using the app{:else}<div id="loader"></div>{/if}</span
 		></Button

@@ -13,7 +13,7 @@
 				outline:
 					'bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border',
 				secondary:
-					'bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 rounded-full py-3 min-w-70 active:scale-[0.9] cursor-pointer',
+					'bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 rounded-full py-3 active:scale-[0.9] cursor-pointer',
 				ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
 				link: 'active:scale-[0.9] cursor-pointer'
 			},

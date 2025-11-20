@@ -4,14 +4,11 @@
 	import { ArrowRight } from '@lucide/svelte';
 	import { fetchData, postData } from '$lib/api';
 
-
 	let { nextPage } = $props();
 
 	/**/
 
-	function submitUsernameRequest() {
-		
-	}
+	function submitUsernameRequest() {}
 </script>
 
 <div class="relative flex h-screen w-screen snap-center flex-col items-center justify-center gap-5">
@@ -24,7 +21,7 @@
 
 	<div class="flex flex-col items-center gap-3">
 		<Input placeholder="enter your username here" />
-		<Button variant="secondary" class="text-md" onclick={submitUsernameRequest}
+		<Button variant="secondary" class="text-md min-w-70" onclick={submitUsernameRequest}
 			><ArrowRight />confirm</Button
 		>
 	</div>
