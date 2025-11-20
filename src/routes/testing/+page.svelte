@@ -1,5 +1,5 @@
 <script lang="ts">
-	let requestURL: string = 'https://corsproxy.io/?url=https://thruut.chat/testing';
+	let requestURL: string = 'http://192.168.1.114/testing';
 
 	async function fetchData(requestURL): Promise {
 		const response = await fetch(requestURL);
